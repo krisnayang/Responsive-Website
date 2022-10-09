@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABABA STEAK</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/icon.png">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="Assets/Logo.png"></a>
+        </div>
+        <div id="menu-bar">
+            <div class="menu-bar">
+                <div id="menu" onclick="onClickMenu()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+                <div id="navbar" class="navbar" onclick="onClickMenu()">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu1.html">Menu</a></li>
+                        <li><a href="promo.html">Promo</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="menu-bg" class="menu-bg"></div>
+    </header>
+
+    <section>
+        <form method="post">
+            <div class="reservation-all-container">
+                <div class="reservation-all-container-2">
+                    <div class="reservation-title">
+                        <h1>RESERVATION</h1>
+                    </div>
+                    <div class="reservation-container">
+                            <div class="reservation-name-container all-reservation">
+                                <label for="nameReservation">Name</label>
+                                <input type="text" id="name-reservation" class="m-radius" placeholder="Input your Name">
+                            </div>
+                            <div class="reservation-email-container all-reservation">
+                                <label for="email-reservation">Email</label>
+                                <input type="text" id="email-reservation"class="m-radius"  placeholder="Input your Email">
+                            </div>
+                            <div class="reservation-phone-container all-reservation">
+                                <label for="phone-reservation">Phone</label>
+                                <input type="tel" id="phone-reservation" class="m-radius" placeholder="Input your Phone Number">
+                            </div>
+                            <div class="reservation-all-sch">
+                                <div class="reservation-date-container all-reservation">
+                                    <label for="date-reservation">Date</label>
+                                    <input type="date" id="date-reservation">
+                                </div>
+                                <div class="reservation-time-container all-reservation">
+                                    <label for="time-reservation">Time</label>
+                                    <input type="time" id="time-reservation">
+                                </div>
+                                <div class="people-reservation-container all-reservation">
+                                    <label for="people-reservation">People</label>
+                                    <input type="number" id="people-reservation" value="1">
+                                </div>
+                            </div>
+                            <div class="reservation-promo-container all-reservation">
+                                <label for="promo-reservation">Promo</label>
+                                <input type="text" id="promo-reservation" class="m-radius" placeholder="Input your Promo code">
+                            </div>
+                            <div class="reservation-note-container all-reservation">
+                                <label for="note-reservation">Note</label>
+                                <textarea id="note-reservation" class="m-radius" rows="2" maxlength="15"></textarea>
+                                <div id="ctrformax">
+                                    0/15
+                                </div>
+                            </div>
+                            <div>
+                                <span id="spanValidate" onclick="validate()">Submit</span>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div id="confirm-all-container" class="confirm-all-container">
+                <div class="confirm-all-container-mid">
+                    <div class="confirm-title">
+                        <h1>CONFIRMATION</h1>
+                    </div>
+                    <div class="confirm-name flex-confirm">
+                        <h3>Name </h3>
+                        <h3>:</h3>
+                        <div id="confirm-name"></div>
+                    </div>
+                    <div class="confirm-email flex-confirm">
+                        <h3>Email </h3>
+                        <h3>:</h3>
+                        <div id="confirm-email"></div>
+                    </div>
+                    <div class="confirm-phone flex-confirm">
+                        <h3>Phone </h3>
+                        <h3>:</h3>
+                        <div id="confirm-phone"></div>
+                    </div>
+                    <div class="confirm-date flex-confirm">
+                        <h3>Date </h3>
+                        <h3>:</h3>
+                        <div id="confirm-date"></div>
+                    </div>
+                    <div class="confirm-time flex-confirm">
+                        <h3>Time </h3>
+                        <h3>:</h3>
+                        <div id="confirm-time"></div>
+                    </div>
+                    <div class="confirm-people flex-confirm">
+                        <h3>People </h3>
+                        <h3>:</h3>
+                        <div id="confirm-people"></div>
+                    </div>
+                    <div class="confirm-promo">
+                        <div class="confirm-promo-title flex-confirm">
+                            <h3>Promo </h3>
+                            <h3>:</h3>
+                            <div id="confirm-promo"></div>
+                        </div>
+                        <div id="promo-assets-container">
+                            <div id="40ababa" class="promoAssets">
+                                <img src="Assets/Promo/Promo-1.png">
+                            </div>
+                            <div id="comboababa" class="promoAssets">
+                                <img src="Assets/Promo/Promo-2.png">
+                            </div>
+                            <div id="fridayababa" class="promoAssets">
+                                <img src="Assets/Promo/Promo-3.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="remNote" class="confirm-note">
+                        <div class="confirm-note-title flex-confirm">
+                            <h3>Note </h3>
+                            <h3>:</h3>
+                            <div id="confirm-note"></div>
+                        </div>
+                    </div>
+                    <div class="confirm-all-button-last">
+                        <div id="confirm-button-last">
+                            <button type="submit" id="last-submit">Submit</button>
+                            <span id="cancel">Cancel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container-footer">
+            <div class="flex-footer flex-footer-2">
+                <div class="logo-footer">
+                    <a href="index.html"><img src="Assets/Logo.png" width="100%"></a>
+                </div>
+            </div>
+            <div class="flex-footer flex-footer-2">
+                <div class="copyright">
+                    <p>
+                        Copyright ©2021<br>
+                        by<br>
+                        ABABA STEAK<br>
+                    </p>
+                </div>
+            </div>
+                <div class="flex-footer">
+                    <div class="follow-us">
+                        <p>Follow Us</p>
+                    </div>
+                    <div class="follow-us-2">
+                        <div class="instragram m-footer"><a href="https://www.instagram.com/"><img src="Assets/Instagram.png"></a></div>
+                        <div class="facebook m-footer"><a href="https://www.facebook.com/"><img src="Assets/Facebook.png"></a></div>
+                        <div class="twitter m-footer"><a href="https://twitter.com/"><img src="Assets/Twitter.png"></a></div>
+                    </div>
+                </div>
+             </div>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script.js"></script>
+</html>

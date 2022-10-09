@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABABA STEAK</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/icon.png">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="Assets/Logo.png"></a>
+        </div>
+        <div id="menu-bar">
+            <div class="menu-bar">
+                <div id="menu" onclick="onClickMenu()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+                <div id="navbar" class="navbar" onclick="onClickMenu()">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu1.html">Menu</a></li>
+                        <li><a href="promo.html">Promo</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="menu-bg" class="menu-bg"></div>
+    </header>
+
+    <section>
+        <div class="menu-all-container">
+            <div class="menu-title">
+                <h1>Our Menu</h1>
+            </div>
+            <div class="food-list-container">
+                <div class="food-list-title">
+                    <h3>FOOD LIST</h3>
+                </div>
+                <div class="food-list-all">
+                    <div class="menu-food"  onclick="onClickBar1()">
+                        <div class="menu-food-img">
+                            <img src="Assets/img-menu/TenderloinSteak.png">
+                        </div>
+                        <div class="title-menu-food">
+                            <h1>Tenderloin Steak</h1>
+                        </div>
+                        <div id="clickBar1" class="desc-menu-food">
+                            <p>The most tender, thick cut fillet of tenderloin, using excellent-grade meat imported from Australia, grilled to perfection using real charcoal, served with fries, and mixed veggies</p>
+                            <p>Rp 180.000</p>
+                        </div>
+                        <div id="clickBar1_1" class="more-info-container">
+                            <div id="bar-info1" class="bar-info"></div>
+                            <div id="bar-info2" class="bar-info"></div>
+                        </div>
+                    </div>
+                    <div class="menu-food"  onclick="onClickBar2()">
+                        <div class="menu-food-img">
+                            <img src="Assets/img-menu/SirloinSteak.png">
+                        </div>
+                        <div class="title-menu-food">
+                            <h1>Sirloin Steak</h1>
+                        </div>
+                        <div id="clickBar2" class="desc-menu-food">
+                            <p>Our tender and juicy sirloin steak, using excellent-grade meat imported from Australia, grilled to perfection using real charcoal, served with fries, and mixed veggies.</p>
+                            <p>Rp 150.000</p>
+                        </div>
+                        <div id="clickBar1_2" class="more-info-container">
+                            <div id="bar-info1" class="bar-info"></div>
+                            <div id="bar-info2" class="bar-info"></div>
+                        </div>
+                    </div>
+                    <div class="menu-food" onclick="onClickBar3()">
+                        <div class="menu-food-img">
+                            <img src="Assets/img-menu/TBoneSteak.png">
+                        </div>
+                        <div class="title-menu-food">
+                            <h1> T-Bone Steak</h1>
+                        </div>
+                        <div id="clickBar3" class="desc-menu-food">
+                            <p>The exiciting T-Bone steak, the perfect combination of size, tenderness and juicyness, using excellent-grade meat imported from Australia, served with fries, and mixed veggies.</p>
+                            <p>Rp 165.000</p>
+                        </div>
+                        <div id="clickBar1_3" class="more-info-container">
+                            <div id="bar-info1" class="bar-info"></div>
+                            <div id="bar-info2" class="bar-info"></div>
+                        </div>
+                    </div>
+                    <div class="menu-food" onclick="onClickBar4()">
+                        <div class="menu-food-img">
+                            <img src="Assets/img-menu/RibEyeSteak.png">
+                        </div>
+                        <div class="title-menu-food">
+                            <h1>RibEye Steak</h1>
+                        </div>
+                        <div id="clickBar4" class="desc-menu-food">
+                            <p>Tender and juicy rib eye steak, grilled to perfection using real charcoal, served with fries, mixed veggies, and our signature AbabaSteak black paper sauces.</p>
+                            <p>Rp 135.000</p>
+                        </div>
+                        <div id="clickBar1_4" class="more-info-container">
+                            <div id="bar-info1" class="bar-info"></div>
+                            <div id="bar-info2" class="bar-info"></div>
+                        </div>
+                    </div>
+                    <div class="menu-food" onclick="onClickBar5()">
+                        <div class="menu-food-img">
+                            <img src="Assets/img-menu/SalmonSteak.png">
+                        </div>
+                        <div class="title-menu-food">
+                            <h1>Salmon Steak</h1>
+                        </div>
+                        <div id="clickBar5" class="desc-menu-food">
+                            <p>Delicious and healthy marinated salmon steak cooked to perfection with crispy skin, served with special made mayo-sauce, fries, and veggies.</p>
+                            <p>Rp 100.000</p>
+                        </div>
+                        <div id="clickBar1_5" class="more-info-container">
+                            <div id="bar-info1" class="bar-info"></div>
+                            <div id="bar-info2" class="bar-info"></div>
+                        </div>
+                    </div>
+                    <div class="menu-food" onclick="onClickBar6()">
+                        <div class="menu-food-img">
+                            <img src="Assets/img-menu/SheriffSteak.png">
+                        </div>
+                        <div class="title-menu-food">
+                            <h1>Sheriff Steak</h1>
+                        </div>
+                        <div id="clickBar6" class="desc-menu-food">
+                            <p>200 grams of round cut imported beef steak with wagyu flavour, grilled to perfection using real charcoal, served with fries, and mixed veggies.</p>
+                            <p>Rp 130.000</p>
+                        </div>
+                        <div id="clickBar1_6" class="more-info-container">
+                            <div id="bar-info1" class="bar-info"></div>
+                            <div id="bar-info2" class="bar-info"></div>
+                        </div>
+                    </div>
+                    <div class="menu-food" onclick="onClickBar7()">
+                        <div class="menu-food-img">
+                            <img src="Assets/img-menu/SmokeyBeefSteak.png">
+                        </div>
+                        <div class="title-menu-food">
+                            <h1>Smokey Beef Steak</h1>
+                        </div>
+                        <div id="clickBar7" class="desc-menu-food">
+                            <p>Our signature Short Ribs steak, smoked and slow-cooked for 48 hours to achieve perfection, using excellent-grade meat imported from Australia, served with fries, and salad.</p>
+                            <p>Rp 135.000</p>
+                        </div>
+                        <div id="clickBar1_7" class="more-info-container">
+                            <div id="bar-info1" class="bar-info"></div>
+                            <div id="bar-info2" class="bar-info"></div>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="food-list-container">
+                <div class="food-list-title">
+                    <h3>DRINK LIST</h3>
+                </div>
+                <div class="food-list-all">
+                    <div class="menu-food"  onclick="onClickBar8()">
+                        <div class="menu-food-img">
+                            <img src="Assets/img-menu/OrangeJuice.png">
+                        </div>
+                        <div class="title-menu-food">
+                            <h1>Orange Juice</h1>
+                        </div>
+                        <div id="clickBar8" class="desc-menu-food">
+                            <p>A classic source of Vitamin C that's good any time of day. Breakfast, Lunch, and Dinner. Made with fresh squeezed oranges.</p>
+                            <p>Rp 23.000</p>
+                        </div>
+                        <div id="clickBar1_8" class="more-info-container">
+                            <div id="bar-info1" class="bar-info"></div>
+                            <div id="bar-info2" class="bar-info"></div>
+                        </div>
+                    </div>
+                    <div class="menu-food"  onclick="onClickBar9()">
+                        <div class="menu-food-img">
+                            <img src="Assets/img-menu/StrawberryMilkShake.png">
+                        </div>
+                        <div class="title-menu-food">
+                            <h1>Strawberry Milk Shake</h1>
+                        </div>
+                        <div id="clickBar9" class="desc-menu-food">
+                            <p>Our creamy Milkshakes are hand-spun the old-fashioned way each time and feature delicious dessert, topped with strawberrry</p>
+                            <p>Rp 28.000</p>
+                        </div>
+                        <div id="clickBar1_9" class="more-info-container">
+                            <div id="bar-info1" class="bar-info"></div>
+                            <div id="bar-info2" class="bar-info"></div>
+                        </div>
+                    </div>
+                    <div class="menu-food" onclick="onClickBar10()">
+                        <div class="menu-food-img">
+                            <img src="Assets/img-menu/StrawberryBasilMocktail.png">
+                        </div>
+                        <div class="title-menu-food">
+                            <h1>Strawberry Basil Mocktail</h1>
+                        </div>
+                        <div id="clickBar10" class="desc-menu-food">
+                            <p>This is an awesome non-alcoholic Mocktail! It’s made with whole strawberries, fresh basil, and seltzer.</p>
+                            <p>Rp 28.000</p>
+                        </div>
+                        <div id="clickBar1_10" class="more-info-container">
+                            <div id="bar-info1" class="bar-info"></div>
+                            <div id="bar-info2" class="bar-info"></div>
+                        </div>
+                    </div>
+                    <div class="menu-food" onclick="onClickBar11()">
+                        <div class="menu-food-img">
+                            <img src="Assets/img-menu/LemonIcedTea.png">
+                        </div>
+                        <div class="title-menu-food">
+                            <h1>Lemon Iced Tea</h1>
+                        </div>
+                        <div id="clickBar11" class="desc-menu-food">
+                            <p>This refreshingly sweet Lemon Iced Tea, made special for you and will keep you cool all Summer long</p>
+                            <p>Rp 20.000</p>
+                        </div>
+                        <div id="clickBar1_11" class="more-info-container">
+                            <div id="bar-info1" class="bar-info"></div>
+                            <div id="bar-info2" class="bar-info"></div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-footer">
+            <div class="flex-footer flex-footer-2">
+                <div class="logo-footer">
+                    <a href="index.html"><img src="Assets/Logo.png" width="100%"></a>
+                </div>
+            </div>
+            <div class="flex-footer flex-footer-2">
+                <div class="copyright">
+                    <p>
+                        Copyright ©2021<br>
+                        by<br>
+                        ABABA STEAK<br>
+                    </p>
+                </div>
+            </div>
+                <div class="flex-footer">
+                    <div class="follow-us">
+                        <p>Follow Us</p>
+                    </div>
+                    <div class="follow-us-2">
+                        <div class="instragram m-footer"><a href="https://www.instagram.com/"><img src="Assets/Instagram.png"></a></div>
+                        <div class="facebook m-footer"><a href="https://www.facebook.com/"><img src="Assets/Facebook.png"></a></div>
+                        <div class="twitter m-footer"><a href="https://twitter.com/"><img src="Assets/Twitter.png"></a></div>
+                    </div>
+                </div>
+             </div>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script.js"></script>
+</html>
